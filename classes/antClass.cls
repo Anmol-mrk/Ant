@@ -14,4 +14,10 @@ public class antClass {
         return cons;
     }
 
+    public static List<Lead> getLead()
+    {
+        List<Lead> cons = [select id,AnnualRevenue,Address from Lead];
+        return cons;
+    }
+
 }
