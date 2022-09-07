@@ -20,4 +20,10 @@ public class antClass {
         return cons;
     }
 
+    public static List<Lead> getlimitLead()
+    {
+        List<Lead> cons = [select id,AnnualRevenue,Address from Lead limit 5];
+        return cons;
+    }
+
 }
